@@ -14,7 +14,7 @@ class BaseHandler(tornado.web.RequestHandler):
 
 class ShowDevList(BaseHandler):
     def get(self):
-        db = connect_db()
+        db = my_db.get_one_conn()
         dbCursor = db.cursor()
         dbCursor.execute('SELECT * FROM devlist')
         rows = dbCursor.fetchall()
@@ -36,6 +36,6 @@ class ShowDevList(BaseHandler):
         self.write(resjson)
 
     def post(self):
-            pass
+        pass
 
 handlers =  [(r'/devlist', ShowDevList)]

@@ -58,18 +58,22 @@ class LoginHandler(BaseHandler):
     def post(self):
         username = self.get_argument('username')
         passwd = self.get_argument('password')
-        db = my_db.get_one_conn()
-        dbCursor = db.cursor()
+        dbcon = my_db.get_one_conn()
+        dbCursor = dbcon.cursor()
         checkRes = check_passwd(dbCursor, username, passwd)
-        dbCursor.close()
         if checkRes['result'] == '0':
             self.set_secure_cookie("user", username)
+            dbCursor.execute('INSERT INTO login_record '
+                             '(username, sourceip, summary_info) '
+                             'VALUES (%s, %s, %s)', [username, self.request.remote_ip, 'app login success'])
+            dbcon.commit()
             if username == 'admin':
                 self.redirect('/admin')
             else:
                 self.redirect('/user')
         else:
             self.render("login.html")
+        dbCursor.close()
 
 class LogoutHandler(BaseHandler):
     def get(self):
