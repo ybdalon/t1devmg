@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>商城触摸版</title>
+<link href="../../../static/css/nearby/public.css" rel="stylesheet" type="text/css" />
+<link href="../../../static/css/nearby/index.css" rel="stylesheet" type="text/css" />
+<script src="../../../static/js/jquery-1.7.2.min.js"></script>
+<script src="../../../static/js/common/dragloader.js"></script>
+
+<script>
+var listpage = 0;
+var type = {{type}};
+$(window).load(function() {
+	$("#status").fadeOut();
+	$("#preloader").delay(350).fadeOut("slow");
+})
+</script>
+</head>
+
+<body>
+<div class="mobile">
+	<!--页面加载 开始-->
+  <div id="preloader">
+    <div id="status">
+      <p class="center-text"><span>拼命加载中···</span></p>
+    </div>
+  </div>
+  <!--页面加载 结束--> 
+  <!--header 开始-->
+  <header>
+    <div class="header"> <a class="new-a-back" href="javascript:history.back();"> <span><img src="../../../static/img/iconfont-fanhui.png"></span> </a>
+      <h2 id='mall_header'></h2>
+    </div>
+  </header>
+  <!--header 结束-->
+  <div class="search w">
+  	<form action="" method="get">
+    	<input name="" type="text" class="search_input" placeholder="请输入商城名称"><input name="" type="button" class="search_submit" value="搜索">
+    </form>
+  </div>
+
+  <div id = "mall_list_view" class = "m_mall w">
+  <!-- 插入模板 -->
+  </div>
+
+  <script id="mall_header_tpl" type="text/tpl">
+    <%= mallheader[type]%>
+  </script>
+  <script id="mall_list_tpl" type="text/tpl">
+    <div class="mall_list" id="mall_list">
+        <% for(var i = 0; i < list.length; i++){ %>
+            <% var item = list[i]; %>
+            <a href="productIndex?param=<%= item.id %>" class="list_mall"><div class="mall_logo"><img src="<%= item.imgsrc %>" /></div><span><%= item.desc %></span></a>
+        <% } %>
+    </div>
+  </script>
+  <script src="../../../static/js/zepto.min.js"></script>
+  <script src="../../../static/js/mtpl.js"></script>
+
+  <script>
+    var data = {mallheader : ['全部','生活超市','餐饮','休闲','家政服务','其他']};
+    var tpl = document.getElementById('mall_header_tpl').innerHTML;
+    var outHtml = mtpl(tpl, data);
+    document.getElementById('mall_header').innerHTML = outHtml;
+  </script>
+
+  <script>
+    // 导航菜单的模板
+    /*var data = {
+        list : [
+            {id: 1, imgsrc: "http://www.178hui.com/upload/mall_logo/www.jd.com.png", desc: "测试商店1"},
+            {id: 2, imgsrc: "http://www.178hui.com/upload/mall_logo/www.jd.com.png", desc: "测试商店2"},
+            {id: 3, imgsrc: "http://www.178hui.com/upload/mall_logo/www.jd.com.png", desc: "测试商店3"},
+            {id: 4, imgsrc: "http://www.178hui.com/upload/mall_logo/www.jd.com.png", desc: "测试商店4"},
+            {id: 5, imgsrc: "http://www.178hui.com/upload/mall_logo/www.jd.com.png", desc: "测试商店5"},
+            {id: 6, imgsrc: "http://www.178hui.com/upload/mall_logo/www.jd.com.png", desc: "测试商店6"},
+            {id: 7, imgsrc: "http://www.178hui.com/upload/mall_logo/www.jd.com.png", desc: "测试商店7"},
+            {id: 3, imgsrc: "http://www.178hui.com/upload/mall_logo/www.jd.com.png", desc: "测试商店3"},
+            {id: 4, imgsrc: "http://www.178hui.com/upload/mall_logo/www.jd.com.png", desc: "测试商店4"},
+            {id: 5, imgsrc: "http://www.178hui.com/upload/mall_logo/www.jd.com.png", desc: "测试商店5"},
+            {id: 6, imgsrc: "http://www.178hui.com/upload/mall_logo/www.jd.com.png", desc: "测试商店6"},
+            {id: 7, imgsrc: "http://www.178hui.com/upload/mall_logo/www.jd.com.png", desc: "测试商店7"},
+        ]
+    };*/
+  //接口地址
+    var url = 'http://192.168.1.107:50001/mall?type=' + type + '&page=' + listpage;
+    $.get(url, function(res){
+    	var tpl = document.getElementById('mall_list_tpl').innerHTML;
+        var outHtml = mtpl(tpl, res);
+        document.getElementById('mall_list_view').innerHTML = outHtml;
+        if (res.list.length < 10)
+        	listpage = 0;
+        else
+        	listpage = 1;
+    });
+  </script>
+  <script type="text/javascript">
+            (function() {
+				var list_main = document.getElementById('mall_list');
+                var dragger = new DragLoader(document.getElementsByClassName('main')[0], {
+                    dragDownThreshold:60,/*向下滑动区域*/
+                    dragUpThreshold:20,/*向上滑动区域*/
+                    dragDownRegionCls: 'DownRefresh',/*向下滑动样式*/
+                    dragUpRegionCls: 'UpRefresh',/*向上滑动样式*/
+					disableDragDown: true,
+                    /*向下滑动时的状态显示*/
+                    dragDownHelper: function(status) {
+                        if (status == 'default') {
+                            return '';
+                        } else if (status == 'prepare') {
+                            return '';
+                        } else if (status == 'load') {
+                            return '';
+                        }
+                    },
+                    /*[主要code]向上滑动时的状态显示*/
+                    dragUpHelper: function(status) {
+                        if (status == 'default') {
+                            
+                            return '';
+                        } else if (status == 'prepare') {
+                            
+                            return '';
+                        } else if (status == 'load') {
+                        	
+                            return '';
+                        }
+                    }
+                });
+                dragger.on('dragDownLoad', function() {
+					
+                    setTimeout(function() {
+                        /*备注：此处放置数据刷新的脚本，主要是新闻列表页的 li */
+                        // 无论何时，必须由业务功能主动调用reset()接口，以还原状态
+                        // 比如在onDragDownLoad()回调中使用ajax加载数据时，在ajax的回调函数中应当调用reset()重置drag状态
+                        // 如果不重置，drag操作将失效
+                        dragger.reset();
+						alert('down刷新');
+                    }, 500);
+                });
+                dragger.on('dragUpLoad', function() {
+					
+                    /*备注：此处放置数据刷新的脚本，主要是新闻列表页的 li */
+                    setTimeout(function() {
+                        dragger.reset();
+						ajaxChangePage();
+                    }, 500);
+                });
+            })();
+
+			function ajaxChangePage(){
+				url = 'http://192.168.1.107:50001/mall?type=' + type + '&page=' + listpage;
+				$.get(url, function(res){
+					for(i = 0; i < res['list'].length; i++) {
+						var item = res['list'][i];
+						var ele = "<a href=\"product?id=" + item.id + "\" class=\"list_mall\"><div class=\"mall_logo\"><img src=\"" + item.imgsrc + "\" /></div><span>" + item.desc + "</span></a>";
+						$("#mall_list").append(ele);
+					}
+					if (i == 10){
+						listpage++;
+					}
+				});
+            }
+    </script>
+</div>
+</body>
+</html>

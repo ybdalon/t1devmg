@@ -1,0 +1,31 @@
+{% extends "adminmain.html"%}
+{% block title %}小区消息管理{% end %}
+{% block title_path %} <span>小区消息管理</span>{% end %}
+{% block main_content %}
+<div class="well-content" style="border:0px;">
+                                 <table class="table table-striped table-bordered table-hover datatable">
+                                    <thead>
+                                        <tr>
+                                            {% for menuitemid in range(0,len(menulist),2)%} 
+                                            <th width="{{menulist[menuitemid]}}">{{menulist[menuitemid+1]}}</th>
+                                            {% end %}
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            {% for id,dateitem in datedic%} 
+                                            <tr>
+                                                {% for subitem in dateitem%}
+                                                    <td>{{subitem}}</td>
+                                                {% end %}
+                                                <td>
+                                                <a class="btn" href="{{date_fuc_mod[id]}}" title="修改"><i class="icon-inbox"></i></a>
+                                                <a class="btn" href="{{date_fuc_del[id]}}" title="删除"><i class="icon-trash"></i></a>
+                                                <a class="btn" href="{{date_fuc_Upimage[id]}}"  title="上传图片"><i class="icon-exclamation"></i></a>
+                                                </td>
+                                            </tr>
+                                            {% end %}
+                                    </tbody>
+                                </table>
+                            </div>
+{% end %}
+{% block addobj_url %} "/admin/area_notices_add"{% end %}

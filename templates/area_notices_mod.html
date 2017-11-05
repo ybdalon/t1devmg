@@ -1,0 +1,140 @@
+{% extends "adminmain.html"%}
+{% block title %}更新小区消息{% end %}
+{% block title_path %} <span>小区消息管理</span><span>更新小区消息</span>{% end %}
+{% block extend_script %}
+<script language="javascript" >
+  /*  
+**    ==================================================================================================  
+**    类名：CLASS_LIANDONG_YAO  
+**    功能：多级连动菜单  
+**    
+**    作者：YAODAYIZI  
+
+**    ==================================================================================================  
+**/  	
+  function CLASS_LIANDONG_YAO(array)
+  {
+   //数组，联动的数据源
+  	this.array=array; 
+  	this.indexName='';
+  	this.obj='';
+  	//设置子SELECT
+	// 参数：当前onchange的SELECT ID，要设置的SELECT ID
+      this.subSelectChange=function(selectName1,selectName2)
+  	{
+  	//try
+  	//{
+    var obj1=document.all[selectName1];
+    var obj2=document.all[selectName2];
+    var objName=this.toString();
+    var me=this;
+  
+    obj1.onchange=function()
+    {
+    	
+    	me.optionChange(this.options[this.selectedIndex].value,obj2.id)
+    }
+
+  	}
+  	//设置第一个SELECT
+	// 参数：indexName指选中项,selectName指select的ID
+  	this.firstSelectChange=function(indexName,selectName)  
+  	{
+  	this.obj=document.all[selectName];
+  	this.indexName=indexName;
+  	this.optionChange(this.indexName,this.obj.id)
+
+  	}
+  
+  // indexName指选中项,selectName指select的ID
+  	this.optionChange=function (indexName,selectName)
+  	{
+    var obj1=document.all[selectName];
+    var me=this;
+    obj1.length=0;
+    obj1.options[0]=new Option("请选择",'');
+    for(var i=0;i<this.array.length;i++)
+    {	
+    
+    	if(this.array[i][1]==indexName)
+    	{
+    	//alert(this.array[i][1]+" "+indexName);
+      obj1.options[obj1.length]=new Option(this.array[i][2],this.array[i][0]);
+    	}
+    }
+  	}
+  	
+  }
+
+
+</script>  
+{% end %}
+{% block main_content %}
+
+<form method=post action="/admin/area_notices_modcheck">
+                            <div class="form_list"><label class="lable_title">消息题目</label><input class="form_input" name=notice_title readonly='true' value="{{datedic['area_notices_title']}}" type="text"/><input class="form_input" name="id" type='hidden' value="{{datedic['area_notices_id']}}" "/></div>
+                            <div class="form_list"><label class="lable_title">发布日期</label><input class="form_input" name=notice_publish_time readonly='true' value="{{datedic['area_notices_publish_time']}}" type="text"/></div>
+                            <div class="form_list"><label class="lable_title">内容分类</label>
+                                <select NAME="notice_type" style="width:150px; margin-left:15px;">
+                                {% for itemname,itemvalue in datedic['area_notices_typesrc']%}
+                                    {% if itemname == datedic['area_notices_type']%}
+                                    <option value={{itemname}} selected="selected" >{{itemvalue}}</option>
+                                    {% else %}
+                                    <option value={{itemname}}>{{itemvalue}}</option>
+                                    {% end %}
+                                {% end %}
+                                </select>
+                            </div>
+                            <div class="form_list"><label class="lable_title">格式类型</label>
+                                <select NAME="content_type" style="width:150px; margin-left:15px;">
+                                {% for itemname,itemvalue in datedic['area_notices_content_typesrc']%}
+                                    {% if itemname == datedic['area_notices_content_type']%}
+                                    <option value={{itemname}} selected="selected" >{{itemvalue}}</option>
+                                    {% else %}
+                                    <option value={{itemname}}>{{itemvalue}}</option>
+                                    {% end %}
+                                {% end %}
+                                </select>
+                            </div>
+                            <div class="form_list"><label class="lable_title">所辖区域</label>
+                            <SELECT ID="s1" NAME="s1" style="width:100px; margin-left:15px;">
+                            </SELECT>
+                            <SELECT ID="s2" NAME="s2" style="width:100px; margin-left:15px;">
+                            </SELECT>
+                            <SELECT ID="s3" NAME="s3" style="width:100px; margin-left:15px;">
+                            </SELECT>
+                            <SELECT ID="s4" NAME="s4" style="width:100px; margin-left:15px;">
+                            </SELECT>
+                            </div>
+                            <div class="form_list"><label class="lable_title">消息内容</label>
+                                <textarea class="form_input" name=notice_content >{{datedic['area_notices_content']}}</textarea>
+                            </div>
+                            <div class="form_list"><input type="submit" class="submit" value="&nbsp;&nbsp;提&nbsp;&nbsp;交&nbsp;&nbsp;"></div>
+                         </form>   
+
+<script language="javascript" >
+ var array=new Array();
+      {% for areanum in range(0,len(arealist))%}
+      array[{{areanum}}]=new Array("{{arealist[areanum]}}","根目录","{{arealist[areanum]}}"); //数据格式 ID，父级ID，名称
+      {% end %}
+      {% for streetnum in range(0,len(streetlist))%}
+          array[{{streetnum+areanum+1}}]=new Array("{{streetlist[streetnum]}}","{{areadic[streetlist[streetnum]]}}","{{streetlist[streetnum]}}"); //数据格式 ID，父级ID，名称
+      {% end %}
+      {% for communitynum in range(0,len(communitylist))%}
+          array[{{communitynum+streetnum+areanum+2}}]=new Array("{{communitylist[communitynum]}}","{{streetdic[communitylist[communitynum]]}}","{{communitylist[communitynum]}}"); //数据格式 ID，父级ID，名称
+      {% end %}
+      {% for area_addressnum in range(0,len(area_addresslist))%}
+          array[{{area_addressnum+communitynum+streetnum+areanum+3}}]=new Array("{{area_addresslist[area_addressnum]}}","{{area_addressdic[area_addresslist[area_addressnum]]}}","{{area_addresslist[area_addressnum]}}"); //数据格式 ID，父级ID，名称
+      {% end %}
+
+
+  //--------------------------------------------
+  //这是调用代码
+  var liandong=new CLASS_LIANDONG_YAO(array) //设置数据源
+  liandong.firstSelectChange("根目录","s1"); //设置第一个选择框
+  liandong.subSelectChange("s1","s2"); //设置子级选择框
+  liandong.subSelectChange("s2","s3");
+  liandong.subSelectChange("s3","s4");
+</script>  
+{% end %}
+{% block addobj_url %} "#"{% end %}

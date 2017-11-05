@@ -1,0 +1,147 @@
+{% extends "adminmain.html"%}
+{% block title %}更新用户{% end %}
+{% block title_path %} <span>用户管理</span><span>更新用户</span>{% end %}
+{% block extend_script %}
+<script language="javascript" >
+  /*  
+**    ==================================================================================================  
+**    类名：CLASS_LIANDONG_YAO  
+**    功能：多级连动菜单  
+**    
+**    作者：YAODAYIZI  
+
+**    ==================================================================================================  
+**/  	
+  function CLASS_LIANDONG_YAO(array)
+  {
+   //数组，联动的数据源
+  	this.array=array; 
+  	this.indexName='';
+  	this.obj='';
+  	//设置子SELECT
+	// 参数：当前onchange的SELECT ID，要设置的SELECT ID
+      this.subSelectChange=function(selectName1,selectName2)
+  	{
+  	//try
+  	//{
+    var obj1=document.all[selectName1];
+    var obj2=document.all[selectName2];
+    var objName=this.toString();
+    var me=this;
+  
+    obj1.onchange=function()
+    {
+    	
+    	me.optionChange(this.options[this.selectedIndex].value,obj2.id)
+    }
+
+  	}
+  	//设置第一个SELECT
+	// 参数：indexName指选中项,selectName指select的ID
+  	this.firstSelectChange=function(indexName,selectName)  
+  	{
+  	this.obj=document.all[selectName];
+  	this.indexName=indexName;
+  	this.optionChange(this.indexName,this.obj.id)
+
+  	}
+  
+  // indexName指选中项,selectName指select的ID
+  	this.optionChange=function (indexName,selectName)
+  	{
+    var obj1=document.all[selectName];
+    var me=this;
+    obj1.length=0;
+    obj1.options[0]=new Option("请选择",'');
+    for(var i=0;i<this.array.length;i++)
+    {	
+    
+    	if(this.array[i][1]==indexName)
+    	{
+    	//alert(this.array[i][1]+" "+indexName);
+      obj1.options[obj1.length]=new Option(this.array[i][2],this.array[i][0]);
+    	}
+    }
+  	}
+  	
+  }
+
+
+</script>  
+{% end %}
+
+{% block main_content %}
+
+<form method=post action="/admin/useraddcheck">
+    <div class="form_list"><label class="lable_title">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</label><input class="form_input" name=username value="{{datedic['name']}}" type="text"/></div>
+                            <div class="form_list"><label class="lable_title">真实姓名</label><input class="form_input" name=realname value="{{datedic['realname']}}" type="text"/></div>
+                            <div class="form_list"><label class="lable_title">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</label><input class="form_input" name=passwd value="{{datedic['passwd']}}" type="text"/></div>
+                            <div class="form_list">
+                            <label class="lable_title">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            {%if datedic['sex']==0%}
+                            <input type="radio" name="sex" value='0' checked="checked">&nbsp;&nbsp;男&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio"  value='1' name="sex">&nbsp;&nbsp;女</div>
+                            {% else %}
+                            <input type="radio" name="sex" value='0' ">&nbsp;&nbsp;男&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio"  checked="checked name="sex">&nbsp;&nbsp;女</div>
+                            {% end %}
+
+                            <div class="form_list"><label class="lable_title">手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机</label><input class="form_input" name=phonenumber value="{{datedic['phone']}}" type="text"/></div>
+                            <div class="form_list"><label class="lable_title">出生年月</label>
+                            <select id="form_dob_month" name="dob_month" style="width:60px; margin-left:15px;">
+                                  <option value="{{datedic['birth_month']}}">{{datedic['birth_month']}}月</option>
+                                  {% for i in range(1,13) %}
+                                      <option value="{{i}}">{{i}}月</option>
+                                  {% end %}
+                            </select>
+                            <select id="form_dob_day" name="dob_day" style="width:60px; margin-left:15px;">
+                                  <option value="{{datedic['birth_day']}}">{{datedic['birth_day']}}日</option>
+                                  {% for i in range(1,32) %}
+                                      <option value="{{i}}">{{i}}日</option>
+                                  {% end %}
+                            </select>
+                            <select id="form_dob_year" name="dob_year" style="width:60px; margin-left:15px;">
+                                  <option value="{{datedic['birth_year']}}">{{datedic['birth_year']}}年</option>
+                                  {% for i in range(1930,2015) %}
+                                      <option value="{{i}}">{{i}}年</option>
+                                  {% end %}
+                            </select>
+                            </div>
+                            <div class="form_list"><label class="lable_title">详细地址</label><input class="form_input" name="daddress" value="{{datedic['address']}}" type="text"/></div>
+                            <div class="form_list"><label class="lable_title">所辖区域</label>
+                            <SELECT ID="s1" NAME="s1" style="width:100px; margin-left:15px;">
+                                    <OPTION selected></OPTION>
+                            </SELECT>
+                            <SELECT ID="s2" NAME="s2" style="width:100px; margin-left:15px;">
+                                    <OPTION selected></OPTION>
+                            </SELECT>
+                            <SELECT ID="s3" NAME="s3" style="width:100px; margin-left:15px;">
+                                    <OPTION selected></OPTION>
+                            </SELECT>
+                            
+                            </div>
+                            <div class="form_list"><input type="submit" class="submit" value="&nbsp;&nbsp;提&nbsp;&nbsp;交&nbsp;&nbsp;"></div>
+                         </form>   
+
+<script language="javascript" >
+ var array=new Array();
+      {% for areanum in range(0,len(arealist))%}
+      array[{{areanum}}]=new Array("{{arealist[areanum]}}","根目录","{{arealist[areanum]}}"); //数据格式 ID，父级ID，名称
+      {% end %}
+      {% for streetnum in range(0,len(streetlist))%}
+          array[{{streetnum+areanum+1}}]=new Array("{{streetlist[streetnum]}}","{{areadic[streetlist[streetnum]]}}","{{streetlist[streetnum]}}"); //数据格式 ID，父级ID，名称
+      {% end %}
+      {% for communitynum in range(0,len(communitylist))%}
+          array[{{communitynum+streetnum+areanum+2}}]=new Array("{{communitylist[communitynum]}}","{{streetdic[communitylist[communitynum]]}}","{{communitylist[communitynum]}}"); //数据格式 ID，父级ID，名称
+      {% end %}
+
+
+  //--------------------------------------------
+  //这是调用代码
+  var liandong=new CLASS_LIANDONG_YAO(array) //设置数据源
+  liandong.firstSelectChange("根目录","s1"); //设置第一个选择框
+  liandong.subSelectChange("s1","s2"); //设置子级选择框
+  liandong.subSelectChange("s2","s3");
+</script>  
+{% end %}
+{% block addobj_url %} "#"{% end %}
