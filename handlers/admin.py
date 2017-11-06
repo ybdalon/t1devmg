@@ -29,14 +29,15 @@ class DevMgHandler(BaseHandler):
             for l in rows:
                 result = {}
                 result['id'] = l[0]
-                result['dut_type'] = l[1]
-                result['asset_number'] = l[2]
-                result['owner'] = l[3]
-                result['being_user'] = l[4]
-                result['ip'] = l[5]
-                result['console_info'] = l[6]
-                result['if_online'] = l[7]
-                result['note'] = l[8]
+                result['name'] = l[1]
+                result['devtype'] = l[2]
+                result['asset_number'] = l[3]
+                result['owner'] = l[4]
+                result['being_user'] = l[5]
+                result['ip'] = l[6]
+                result['console_info'] = l[7]
+                result['if_online'] = l[8]
+                result['note'] = l[9]
                 json_data.append(result)
             resjson = {"status": "200", "message": "ok", "data": json_data}
             # jsondatar=json.dumps(json_data,ensure_ascii=False)
@@ -49,6 +50,7 @@ class DevMgHandler(BaseHandler):
             return
         recv_json = json.JSONDecoder().decode(urllib.unquote(self.request.body))
         name = recv_json['name']
+        devtype = recv_json['devtype']
         asset_number = recv_json['asset_number']
         owner = recv_json['owner']
         being_user = recv_json['being_user']
@@ -56,14 +58,14 @@ class DevMgHandler(BaseHandler):
         console_info = recv_json['console_info']
         note = recv_json['note']
         if action == 'add':
-            'INSERT INTO devlist (name, asset_number, owner, being_user, ip_address, console_info, note) VALUES ' \
-            '("%s", "%s", "%s", "%s", "%s", "%s", "%s")' % (
-            name, asset_number, owner, being_user, ip_address, console_info, note)
+            'INSERT INTO devlist (name, devtype, asset_number, owner, being_user, ip_address, console_info, note) VALUES ' \
+            '("%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s")' % (
+            name, devtype, asset_number, owner, being_user, ip_address, console_info, note)
         elif action == 'del':
             'DELETE FROM devlist WHERE asset_number="%s" and owner="%s"' % (asset_number, owner)
         elif action == 'mod':
-            'UPDATA devlist set name="%s", owner="%s", being_user="%s", ip_address="%s", console_info="%s", note="%s"' \
-            'WHERE asset_number="%s" ' % (name, owner, being_user, ip_address, console_info, note, asset_number)
+            'UPDATA devlist set name="%s", devtype="%s", owner="%s", being_user="%s", ip_address="%s", console_info="%s", note="%s"' \
+            'WHERE asset_number="%s" ' % (name, devtype, owner, being_user, ip_address, console_info, note, asset_number)
 
 
 

@@ -30,6 +30,7 @@ auditInfoTable = ('audit_info',
 devlistTable = ('devlist',
                 'id INT(11) NOT NULL primary key AUTO_INCREMENT,'
                 'name CHAR(30) NOT NULL,'
+                'devtype CHAR(30) DEFAULT "DUT",'           
                 'asset_number CHAR(30) NOT NULL,'
                 'owner CHAR(30) NOT NULL,'
                 'being_user CHAR(30),'
@@ -39,6 +40,11 @@ devlistTable = ('devlist',
                 'note text'
                 )
 
+devtypeTable = ('devtype',
+                'id INT(11) NOT NULL primary key AUTO_INCREMENT,'
+                'typename CHAR(30) NOT NULL,'
+                'note text')
+
 def create_tables(tablesList):
     db = connect_db()
     dbCursor = db.cursor()
@@ -47,7 +53,7 @@ def create_tables(tablesList):
             dbCursor.execute("DROP TABLE IF EXISTS %s"%t[0])
             print "DROP TABLE IF EXISTS %s;"%t[0]
             db.commit()
-            createTableSql = "CREATE TABLE IF NOT EXISTS %s (%s)"%(t[0], t[1])
+            createTableSql = "CREATE TABLE IF NOT EXISTS %s (%s) ENGINE=MyISAM DEFAULT CHARSET=utf8 "%(t[0], t[1])
             #try:
             dbCursor.execute(createTableSql)
             #except MySQLdb.Error, e:
@@ -64,7 +70,8 @@ if __name__ == '__main__':
     tablesList.extend([ devlistTable,
                         userInfoTable,
                         loginRecordTable,
-                        auditInfoTable])
+                        auditInfoTable,
+                        devtypeTable])
     #创建表
     create_tables(tablesList)
 

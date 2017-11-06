@@ -3,7 +3,8 @@
 devlist
 
 设备ID：
-设备名称： PC， 笔记本， 显示器， DUT， 新汉EP 立华EP
+设备名称：
+设备类型：
 资产编号：
 所属人：
 正在使用人：
@@ -11,4 +12,23 @@ devlist
 串口信息：
 是否在线：  y n
 备注信息：
+
+admin 用户登录，页面 /adminindex.html
+     一级菜单        二级菜单
+	 设备管理
+	                 所有设备       get /admin/dev/list
+	 日志
+                     登录日志       get /admin/log/login
+				     操作日志       get /admin/log/opt
+
+普通user登录后，页面为  /user.html
+      设备管理
+	                 我的资产     get /user/dev/list?scope=my
+			         借的设备     get /user/dev/list?scope=borrow
+			         借出设备     get /user/dev/list?scope=lend
+	  日志
+	                 登录日志     get /usr/log/login
+                     操作日志	  get /usr/log/opt
+
+无需权限查看所有设备， get  /devlist
 

@@ -5,9 +5,9 @@ import MySQLdb
 
 #请按下面参数来配置好数据库环境
 MYSQL_CONN = None
-HOST = 'localhost'
+HOST = '192.168.10.110'
 USERNAME = 'devadmin'
-PASSWD = '123456'
+PASSWD = 'devpasswd'
 DATABASENAME = 't1devmg'
 CHARSET = 'utf8'
 
@@ -18,8 +18,6 @@ def connect_db():
         print "connect to database %s failed, reason:%s\n"%(DATABASENAME, e)
         return None
     return dbconn
-
-db_conn = connect_db()
 
 class mydb(object):
     def __init__(self, host, port, user, passwd, db):
