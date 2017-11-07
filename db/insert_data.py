@@ -52,7 +52,7 @@ sqlList_devtype = ['insert into devtype (typename, note) values ("%s", "%s") '%(
                    'insert into devtype (typename, note) values ("%s", "%s") ' % ('dut', "DUT")]
 
 dbconn = connect_db()
-#insert_data_for_test(dbconn, sqlList_user)
-#insert_data_for_test(dbconn, sqlList_test)
+insert_data_for_test(dbconn, sqlList_user)
+insert_data_for_test(dbconn, sqlList_test)
 insert_data_for_test(dbconn, sqlList_devtype)
 dbconn.close()

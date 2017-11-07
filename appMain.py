@@ -28,21 +28,19 @@ class Application(web.Application):
             # host pattern and handlers
             self.add_handlers(sub_handler[0], sub_handler[1])
 
-
 def main():
     #tornado.options.parse_command_line()
     http_server = HTTPServer(Application(), xheaders=True)
     port = 8000
     num_processes = 1
-
     #if options.debug:
     #        num_processes = 1
 
     #if options.chat_app:
     #        port = port + 1
     #        num_processes = 1
-    http_server.bind(int(port))
-    http_server.start(int(num_processes))
+    http_server.bind(port)
+    http_server.start(num_processes)
     IOLoop.instance().start()
     
 

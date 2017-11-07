@@ -1,0 +1,44 @@
+<div class="panel-group table-responsive" role="tablist">
+    <div class="panel panel-primary leftMenu">
+        <!-- 利用data-target指定要折叠的分组列表 -->
+        <div class="panel-heading" id="deviceManageHeading" data-toggle="collapse" data-target="#deviceManageGroup" role="tab" >
+            <h4 class="panel-title">
+                设备管理
+                <span class="glyphicon glyphicon-chevron-up right"></span>
+            </h4>
+        </div>
+        <!-- .panel-collapse和.collapse标明折叠元素 .in表示要显示出来 -->
+        <div id="deviceManageGroup" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="deviceManageHeading">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <!-- 利用data-target指定URL -->
+                    <button class="menu-item-left" data-target="adminIndex.html">
+                        <span class="glyphicon glyphicon-plane"></span>所有设备
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div><!--panel end-->
+    <div class="panel panel-primary leftMenu">
+        <div class="panel-heading" id="systemLogsHeading" data-toggle="collapse" data-target="#systemLogsGroup" role="tab" >
+            <h4 class="panel-title">
+                日志
+                <span class="glyphicon glyphicon-chevron-up right"></span>
+            </h4>
+        </div>
+        <div id="systemLogsGroup" class="panel-collapse collapse" role="tabpanel" aria-labelledby="systemLogsHeading">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <button class="menu-item-left" data-target="loginLogs.html">
+                        <span class="glyphicon glyphicon-user"></span>登录日志
+                    </button>
+                </li>
+                <li class="list-group-item">
+                    <button class="menu-item-left" data-target="operateLogs.html">
+                        <span class="glyphicon glyphicon-tags"></span>操作日志
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>  
+</div>

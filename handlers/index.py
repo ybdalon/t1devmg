@@ -55,6 +55,9 @@ class indexHandler(BaseHandler):
             self.redirect('/user')
 
 class LoginHandler(BaseHandler):
+    def get(self):
+        self.render('login.html')
+
     def post(self):
         username = self.get_argument('username')
         passwd = self.get_argument('password')
@@ -77,14 +80,15 @@ class LoginHandler(BaseHandler):
 
 class LogoutHandler(BaseHandler):
     def get(self):
-        if self.current_user:
+        username = self.get_current_user()
+        if username:
             self.clear_cookie("user")
-            self.redirect("/login.html")
-        dbCon = dbMysql.my_db.get_one_conn()
-        dbCursor = dbCon.cursor()
-        dbCursor.execute('delete from online_users_info where username=%s', [name])
-        dbCon.commit()
-        dbCursor.close()
+            self.redirect("/login")
+        # dbCon = my_db.get_one_conn()
+        # dbCursor = dbCon.cursor()
+        # dbCursor.execute('delete from online_users_info where username=%s', [username])
+        # dbCon.commit()
+        # dbCursor.close()
 
 
 handlers = [(r"/", indexHandler),

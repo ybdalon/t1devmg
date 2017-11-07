@@ -1,0 +1,78 @@
+{
+    "data": [
+        {
+            "asset_number": "t1-ad-10", 
+            "being_user": "wangboyuan", 
+            "console_info": "192.168.10.13:33", 
+            "devtype": "DUT", 
+            "id": 1, 
+            "if_online": "n", 
+            "ip": "1.1.1.2", 
+            "name": "lihua", 
+            "note": "this is yb dut", 
+            "owner": "yinbin"
+        }, 
+        {
+            "asset_number": "t1-ad-11", 
+            "being_user": "wangboyuan", 
+            "console_info": "192.168.10.13:23", 
+            "devtype": "DUT", 
+            "id": 2, 
+            "if_online": "n", 
+            "ip": "1.4.1.2", 
+            "name": "xinhan", 
+            "note": "this is wangboyuan dut", 
+            "owner": "wangboyuan"
+        }, 
+        {
+            "asset_number": "t1-ad-10", 
+            "being_user": "zhangxian", 
+            "console_info": "192.168.10.13:53", 
+            "devtype": "DUT", 
+            "id": 3, 
+            "if_online": "n", 
+            "ip": "1.1.15.0", 
+            "name": "lihua", 
+            "note": "this is yb dut", 
+            "owner": "zhangxian"
+        }, 
+        {
+            "asset_number": "t1-ad-10", 
+            "being_user": "wangboyuan--------", 
+            "console_info": "console 192.168.10.13:33", 
+            "devtype": "DUT", 
+            "id": 4, 
+            "if_online": "n", 
+            "ip": "1.1.1.2", 
+            "name": "lihua", 
+            "note": "this is yb dut, asdfasdfasdfasdfasdfadfasdfasdfasdfasdfasdfasdf", 
+            "owner": "liuhao"
+        }, 
+        {
+            "asset_number": "t1-ad-10", 
+            "being_user": "wangboyuan", 
+            "console_info": "192.168.10.13:33", 
+            "devtype": "DUT", 
+            "id": 5, 
+            "if_online": "n", 
+            "ip": "1.1.1.2", 
+            "name": "lihua", 
+            "note": "this is yb dut", 
+            "owner": "wudong"
+        }, 
+        {
+            "asset_number": "t1-ad-10", 
+            "being_user": "wangboyuan", 
+            "console_info": "192.168.10.13:33", 
+            "devtype": "DUT", 
+            "id": 6, 
+            "if_online": "n", 
+            "ip": "1.1.1.2", 
+            "name": "lihua", 
+            "note": "this is yb dut", 
+            "owner": "panlei"
+        }
+    ], 
+    "message": "ok", 
+    "status": "200"
+}

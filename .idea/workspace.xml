@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4ae84da3-08c8-4bb7-b58e-a11f7afca394" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/dalon.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/t1devmg.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/ie10-viewport-bug-workaround.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/signin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/data/allDeviceList.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/adminIndex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/ie-emulation-modes-warning.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/ie10-viewport-bug-workaround.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/pages/adminMenu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/adminIndex.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/local_sock.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/avatar/ef39e8a5e3f75b4b7a96c2900714458a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/icon/Descr.WD3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/icon/M663 1125q-11 -1 -15.5 -10.5t-8.5 -9.5q-5 -1 -5 5q0 12 19 15h10zM750 1111q-4 -1 -11.5 6.5t-17.5 4.5q03F7DC5A5A" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/icon/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/icon/fontawesome-webfont.eot@" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/icon/fontawesome-webfont.eot@v=3.2.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/icon/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/icon/fontawesome-webfont.ttf@v=3.2.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/icon/fontawesome-webfont.woff@v=3.2.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/logout.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/user.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/Descr.WD3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/apple-touch-icon-114-precomposed.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/apple-touch-icon-144-precomposed.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/apple-touch-icon-57-precomposed.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/apple-touch-icon-72-precomposed.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/defaultimg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/forms/Descr.WD3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/forms/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/forms/chosen-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/forms/uniform_check.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/forms/uniform_radio.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/forms/uniform_select.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/iconfont-fanhui.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/iconfont-sousuo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/images_zoom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/index.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/jquery.minicolors.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/minus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/plus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/progress-pattern.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/public.gif@2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/video_play.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/calendar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/charts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/common/com.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/common/dragloader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/dashboard.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/datatables.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/flatpoint_core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/forms.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/forms_advanced.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/forms_layout.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/forms_wizard.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/home/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jquery-1.7.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jquery-ui-1.10.3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jquery.touchslider.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/bootstrap-datepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/bootstrap-datetimepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/bootstrap-fileupload.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/bootstrap-modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/bootstrap-modalmanager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/bootstrap-select.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/bootstrap-timepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/bootstrapSwitch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/charCount.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/chosen.jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/editor/bootstrap-wysihtml5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/editor/wysihtml5-0.3.0.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/file_upload/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/file_upload/jquery.fileupload-audio.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/file_upload/jquery.fileupload-image.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/file_upload/jquery.fileupload-process.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/file_upload/jquery.fileupload-ui.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/file_upload/jquery.fileupload-validate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/file_upload/jquery.fileupload-video.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/file_upload/jquery.fileupload.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/file_upload/jquery.iframe-transport.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/file_upload/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/file_upload/vendor/jquery.ui.widget.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/flot/excanvas.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/flot/jquery.flot.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/flot/jquery.flot.orderBars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/flot/jquery.flot.pie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/flot/jquery.flot.resize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/flot/jquery.flot.selection.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/footable/data-generator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/footable/footable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/fullcalendar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/google-code-prettify/prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/google-code-prettify/prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/jquery.autosize-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/jquery.backstretch.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/jquery.bootstrap.wizard.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/jquery.collapsible.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/jquery.dataTables.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/jquery.easytabs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/jquery.inputmask.bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/jquery.mCustomScrollbar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/jquery.minicolors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/jquery.mousewheel.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/jquery.sparkline.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/jquery.tagsinput.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/jquery.uniform.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/jquery.validate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/maps/data/jquery.vmap.sampledata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/maps/jquery.vmap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/library/maps/maps/jquery.vmap.world.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/mtpl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/nearby/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/nearby/template.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/updating.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/zepto.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/concil_duty.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/concil_index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/concil_serv_rules.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/concil_working_arch.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/concil_working_arch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/concil_working_rules.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/jqm/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/jqm/css/themes/default/images/ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/jqm/css/themes/default/images/icons-18-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/jqm/css/themes/default/images/icons-18-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/jqm/css/themes/default/images/icons-36-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/jqm/css/themes/default/images/icons-36-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/jqm/css/themes/default/jquery.mobile-1.3.2.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/jqm/js/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/jqm/js/jquery.mobile-1.3.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/party_duty.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/party_index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/routing_1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/routing_2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/routing_3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/routing_4.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/routing_5.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/routing_6.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/routing_7.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/routing_8.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/routing_9.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/public_pages/routing_index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/adminindex.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/concil_duty.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/concil_index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/concil_serv_rules.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/concil_working_arch.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/concil_working_arch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/concil_working_rules.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/jqm/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/jqm/css/themes/default/images/ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/jqm/css/themes/default/images/icons-18-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/jqm/css/themes/default/images/icons-18-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/jqm/css/themes/default/images/icons-36-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/jqm/css/themes/default/images/icons-36-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/jqm/css/themes/default/jquery.mobile-1.3.2.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/jqm/js/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/jqm/js/jquery.mobile-1.3.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/party_duty.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/party_index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/routing_1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/routing_2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/routing_3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/routing_4.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/routing_5.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/routing_6.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/routing_7.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/routing_8.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/routing_9.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/public_pages/routing_index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/imclient.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/tcp_connect.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test_addconfirm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test_establistchatgroup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test_insert_data.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test_prelogin.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appMain.py" afterPath="$PROJECT_DIR$/appMain.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/insert_data.py" afterPath="$PROJECT_DIR$/db/insert_data.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handlers/admin.py" afterPath="$PROJECT_DIR$/handlers/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handlers/devlist.py" afterPath="$PROJECT_DIR$/handlers/devlist.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handlers/index.py" afterPath="$PROJECT_DIR$/handlers/index.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handlers/user.py" afterPath="$PROJECT_DIR$/handlers/user.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/index.css" afterPath="$PROJECT_DIR$/static/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/user.html" afterPath="$PROJECT_DIR$/templates/user.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/jquery-1.10.2.js" afterPath="$PROJECT_DIR$/static/js/jquery-1.12.1.js" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/t1devmg$dbMysql.coverage" NAME="dbMysql Coverage Results" MODIFIED="1509948751997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db" />
+    <SUITE FILE_PATH="coverage/t1devmg$appMain.coverage" NAME="appMain Coverage Results" MODIFIED="1510036975576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/t1devmg$db_init.coverage" NAME="db_init Coverage Results" MODIFIED="1509959984321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db" />
+    <SUITE FILE_PATH="coverage/t1devmg$insert_data.coverage" NAME="insert_data Coverage Results" MODIFIED="1509960219968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Hi</find>
+      <find>login</find>
+      <find>logo</find>
+      <find>data</find>
+      <find>/data/allDeviceList.json</find>
+      <find>adminMenu</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="work1" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/db/db_init.py" />
+        <option value="$PROJECT_DIR$/db/dbMysql.py" />
+        <option value="$PROJECT_DIR$/readme" />
+        <option value="$PROJECT_DIR$/templates/adminindex.html" />
+        <option value="$PROJECT_DIR$/static/css/index.css" />
+        <option value="$PROJECT_DIR$/db/insert_data.py" />
+        <option value="$PROJECT_DIR$/handlers/devlist.py" />
+        <option value="$PROJECT_DIR$/handlers/admin.py" />
+        <option value="$PROJECT_DIR$/handlers/user.py" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/templates/adminIndex.html" />
+        <option value="$PROJECT_DIR$/static/pages/adminMenu.html" />
+        <option value="$PROJECT_DIR$/static/js/adminIndex.js" />
+        <option value="$PROJECT_DIR$/static/pages/userIndex.html" />
+        <option value="$PROJECT_DIR$/templates/user1html" />
+        <option value="$PROJECT_DIR$/templates/user.html" />
+        <option value="$PROJECT_DIR$/appMain.py" />
+        <option value="$PROJECT_DIR$/static/js/jquery-1.12.1.js" />
+        <option value="$PROJECT_DIR$/handlers/index.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1296" />
+    <option name="height" value="786" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Django</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="t1devmg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="t1devmg" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ybs" />
+    <property name="settings.editor.selected.configurable" value="project.scopes" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\t1devmg\static\pages" />
+      <recent name="D:\workspace\t1devmg\templates" />
+      <recent name="D:\workspace\t1devmg\static\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\t1devmg\static\pages" />
+      <recent name="D:\workspace\t1devmg\templates" />
+      <recent name="D:\workspace\t1devmg\static" />
+      <recent name="D:\workspace\t1devmg\static\js" />
+      <recent name="D:\workspace\t1devmg\static\font" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.appMain">
+    <configuration name="appMain" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="t1devmg" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/appMain.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="dbMysql" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/db" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="t1devmg" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db/dbMysql.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="db_init" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/db" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="t1devmg" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db/db_init.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="insert_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/db" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="t1devmg" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db/insert_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Python.dbMysql" />
+      <item index="1" class="java.lang.String" itemvalue="Python.db_init" />
+      <item index="2" class="java.lang.String" itemvalue="Python.insert_data" />
+      <item index="3" class="java.lang.String" itemvalue="Python.appMain" />
+    </list>
+    <recent_temporary>
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.appMain" />
+        <item index="1" class="java.lang.String" itemvalue="Python.insert_data" />
+        <item index="2" class="java.lang.String" itemvalue="Python.db_init" />
+        <item index="3" class="java.lang.String" itemvalue="Python.dbMysql" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\dalon\AppData\Roaming\Subversion</configuration>
+    <option name="runUnderTerminal" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ae84da3-08c8-4bb7-b58e-a11f7afca394" name="Default" comment="" />
+      <created>1509933022610</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1509933022610</updated>
+    </task>
+    <task id="LOCAL-00001" summary="del some file">
+      <created>1509952364802</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1509952364802</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1296" height="786" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.4935275" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.50647247" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.49676377" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3881789" sideWeight="0.49029127" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290735" sideWeight="0.49676377" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2540453" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="false" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="false" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="false" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="false" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="false" />
+    <MESSAGE value="del some file" />
+    <MESSAGE value="develop" />
+    <option name="LAST_COMMIT_MESSAGE" value="develop" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/appMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#47#56#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1691">
+          <caret line="94" column="13" lean-forward="true" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
+          <folding>
+            <element signature="e#46#70#0" expanded="true" />
+            <marker date="1510019520990" expanded="true" signature="1331:1352" ph="SELECT * FRO... devlist" />
+            <marker date="1510019520990" expanded="true" signature="1525:1559" ph="SELECT * FRO... devlist" />
+            <marker date="1510019520990" expanded="true" signature="1525:1561" ph="SELECT * FRO... devlist" />
+            <marker date="1510019520990" expanded="true" signature="1801:1854" ph="SELECT * FRO... devlist" />
+            <marker date="1510019520990" expanded="true" signature="1801:1856" ph="SELECT * FRO... devlist" />
+            <marker date="1510019520990" expanded="true" signature="2104:2158" ph="SELECT * FRO... devlist" />
+            <marker date="1510019520990" expanded="true" signature="2104:2160" ph="SELECT * FRO... devlist" />
+            <marker date="1510019520990" expanded="true" signature="2967:3128" ph="INSERT INTO devlist... " />
+            <marker date="1510019520990" expanded="true" signature="3312:3364" ph="DELETE FROM " />
+            <marker date="1510019520990" expanded="true" signature="3312:3366" ph="DELETE FROM " />
+            <marker date="1510019520990" expanded="true" signature="3490:3636" ph="UPDATE devli... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1577">
+          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding>
+            <element signature="e#211#235#0" expanded="true" />
+            <marker date="1510037098298" expanded="true" signature="924:962" ph="SELECT passw... users" />
+            <marker date="1510037098298" expanded="true" signature="2377:2520" ph="INSERT INTO login_record... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1349">
+          <caret line="76" column="43" lean-forward="true" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+          <folding>
+            <marker date="1510019509618" expanded="true" signature="1212:1233" ph="SELECT * FRO... devlist" />
+            <marker date="1510019509618" expanded="true" signature="2037:2194" ph="INSERT INTO devlist... " />
+            <marker date="1510019509618" expanded="true" signature="2367:2419" ph="DELETE FROM " />
+            <marker date="1510019509618" expanded="true" signature="2367:2421" ph="DELETE FROM " />
+            <marker date="1510019509618" expanded="true" signature="2535:2677" ph="UPDATe devli... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_insert_data.py" />
+    <entry file="file://$PROJECT_DIR$/static/image/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/stylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/image/user.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/dbMysql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/insert_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+          <folding>
+            <marker date="1509960219910" expanded="true" signature="332:417" ph="insert into users... " />
+            <marker date="1509960219910" expanded="true" signature="473:558" ph="insert into users... " />
+            <marker date="1509960219910" expanded="true" signature="621:706" ph="insert into users... " />
+            <marker date="1509960219910" expanded="true" signature="770:855" ph="insert into users... " />
+            <marker date="1509960219910" expanded="true" signature="919:1004" ph="insert into users... " />
+            <marker date="1509960219910" expanded="true" signature="1069:1154" ph="insert into users... " />
+            <marker date="1509960219910" expanded="true" signature="1227:1312" ph="insert into users... " />
+            <marker date="1509960219910" expanded="true" signature="1399:1555" ph="insert into devlist... " />
+            <marker date="1509960219910" expanded="true" signature="1680:1832" ph="insert into devlist... " />
+            <marker date="1509960219910" expanded="true" signature="1982:2134" ph="insert into devlist... " />
+            <marker date="1509960219910" expanded="true" signature="2263:2414" ph="insert into devlist... " />
+            <marker date="1509960219910" expanded="true" signature="2616:2767" ph="insert into devlist... " />
+            <marker date="1509960219910" expanded="true" signature="2893:3044" ph="insert into devlist... " />
+            <marker date="1509960219910" expanded="true" signature="3191:3247" ph="insert into devtype... " />
+            <marker date="1509960219910" expanded="true" signature="3284:3340" ph="insert into devtype... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="94" column="13" lean-forward="false" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
+          <folding>
+            <element signature="e#46#70#0" expanded="true" />
+            <marker date="1510019520990" expanded="true" signature="1331:1352" ph="SELECT * FRO... devlist" />
+            <marker date="1510019520990" expanded="true" signature="1525:1559" ph="SELECT * FRO... devlist" />
+            <marker date="1510019520990" expanded="true" signature="1525:1561" ph="SELECT * FRO... devlist" />
+            <marker date="1510019520990" expanded="true" signature="1801:1854" ph="SELECT * FRO... devlist" />
+            <marker date="1510019520990" expanded="true" signature="1801:1856" ph="SELECT * FRO... devlist" />
+            <marker date="1510019520990" expanded="true" signature="2104:2158" ph="SELECT * FRO... devlist" />
+            <marker date="1510019520990" expanded="true" signature="2104:2160" ph="SELECT * FRO... devlist" />
+            <marker date="1510019520990" expanded="true" signature="2967:3128" ph="INSERT INTO devlist... " />
+            <marker date="1510019520990" expanded="true" signature="3312:3364" ph="DELETE FROM " />
+            <marker date="1510019520990" expanded="true" signature="3312:3366" ph="DELETE FROM " />
+            <marker date="1510019520990" expanded="true" signature="3490:3636" ph="UPDATE devli... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18709">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/forms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-740">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6327">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/pages/adminMenu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-376">
+          <caret line="20" column="57" lean-forward="true" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/pages/userIndex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1748">
+          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user1html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1216">
+          <caret line="139" column="35" lean-forward="true" selection-start-line="139" selection-start-column="35" selection-end-line="139" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/adminIndex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/db_init.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="32" column="60" lean-forward="true" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
+          <folding>
+            <marker date="1509947729511" expanded="true" signature="1859:1880" ph="DROP TABLE I... " />
+            <marker date="1509947729511" expanded="true" signature="1909:1930" ph="DROP TABLE I... " />
+            <marker date="1509947729511" expanded="true" signature="1994:2028" ph="CREATE TABLE... IF" />
+            <marker date="1509947729511" expanded="true" signature="1994:2063" ph="CREATE TABLE... IF" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/jquery-1.12.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="826" column="0" lean-forward="true" selection-start-line="826" selection-start-column="0" selection-end-line="826" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/adminIndex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-171">
+          <caret line="27" column="54" lean-forward="true" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+          <folding>
+            <marker date="1510032167464" expanded="true" signature="1339:1345" ph=" " />
+            <marker date="1510032167464" expanded="true" signature="1408:1414" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="76" column="13" lean-forward="false" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+          <folding>
+            <element signature="e#211#235#0" expanded="true" />
+            <marker date="1510037098298" expanded="true" signature="924:962" ph="SELECT passw... users" />
+            <marker date="1510037098298" expanded="true" signature="2377:2520" ph="INSERT INTO login_record... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/devlist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="32" selection-end-column="34" />
+          <folding>
+            <marker date="1509961639288" expanded="true" signature="973:994" ph="SELECT * FRO... devlist" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="76" column="43" lean-forward="false" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+          <folding>
+            <marker date="1510019509618" expanded="true" signature="1212:1233" ph="SELECT * FRO... devlist" />
+            <marker date="1510019509618" expanded="true" signature="2037:2194" ph="INSERT INTO devlist... " />
+            <marker date="1510019509618" expanded="true" signature="2367:2419" ph="DELETE FROM " />
+            <marker date="1510019509618" expanded="true" signature="2367:2421" ph="DELETE FROM " />
+            <marker date="1510019509618" expanded="true" signature="2535:2677" ph="UPDATe devli... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
